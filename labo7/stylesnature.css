@@ -1,0 +1,57 @@
+section > header {
+    background-image: url(../labo7/images/header.jpg);
+    background-repeat: no-repeat;
+    height: 15vh;
+    background-size:2000px;
+
+}
+
+section > header > h1 {
+    margin-top: 0;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+header > h1 {
+    padding-left: 1vw;
+    font-size: 2em;
+}
+
+nav {
+    background-color: #3e3e3e;
+    padding-top: .5vh;
+    padding-bottom: .5vh;
+}
+
+nav > a {
+    padding-left: .5vw;
+    color: lightgreen;
+    text-decoration: none;
+}
+
+article {
+    background-color: lightgray;
+}
+
+article > header > h1 {
+    margin: .5vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    color: black;
+    text-decoration: underline;
+}
+
+article > p {
+    padding-left: .5vw;
+}
+
+article > footer {
+    padding-left: .5vw;
+    padding-bottom: .5vh;
+}
+
+body > section > footer {
+    margin-bottom: 5vh;
+    margin-top: .5vh;
+}

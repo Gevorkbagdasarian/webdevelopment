@@ -1,0 +1,36 @@
+body {
+    background-color: #3e3e3e;
+    font-family: Arial, sans-serif;
+}
+
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #EF233C;
+    background-color: #3e3e3e;
+    padding: 40px;
+}
+li{
+    text-align: center;
+}
+
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    background-color: black;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    color: #EF233C;
+    background-color: black;
+}
+
+p{
+font-size: 20px;
+    text-align: center;
+    color: #EF233C;
+}

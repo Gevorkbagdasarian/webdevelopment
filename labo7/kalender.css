@@ -1,0 +1,60 @@
+td:first-child, td:last-child{
+    background: olivedrab;
+
+}
+
+
+body{
+    font-family: "Verdana", sans-serif; font-size: 30px;
+    background: #EDF2F4;
+}
+.container{
+    max-width: 400px;
+    margin: auto;
+
+}
+.month{
+    text-align: center;
+    background: cornflowerblue;
+    color: black;
+    padding: 25px;
+    border: 3px solid black;
+}
+
+table,th,td{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 17px;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+tr,th,td{
+    padding: 5px;
+}
+th{
+    background:royalblue;
+    color: black;
+}
+td{
+    background:white;
+}
+td:hover{
+    background: orange;
+
+}
+
+tbody tr .vrij{
+    background-color: #808080;
+    color: #3e3e3e; !important;
+}
+
+.link{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #EF233C; !important;
+}
+.checked{
+    background-color: yellow;
+}
+

@@ -1,0 +1,19 @@
+body {
+    font-family: "Verdana", sans-serif;
+    font-size: 20px;
+
+}
+table{
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+td,th {
+    border: 5px black solid;
+}
+
+th {
+    background-color: bisque;
+}
