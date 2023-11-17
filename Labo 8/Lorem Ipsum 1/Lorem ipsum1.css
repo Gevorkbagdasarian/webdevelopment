@@ -1,0 +1,16 @@
+/* Reset standaardmarges en padding van de body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Stijl voor de kolommen */
+.column {
+    box-sizing: border-box; /* De padding en border worden meegenomen in de breedte */
+    width: 49%; /* Berekening voor 1px border en 10px padding aan beide zijden */
+    border: 1px solid #000; /* 1px border */
+    padding: 10px; /* 10px padding */
+    float: left; /* Zorgt ervoor dat de kolommen naast elkaar komen te staan */
+}
+
+
