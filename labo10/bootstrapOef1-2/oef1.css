@@ -1,0 +1,12 @@
+.donker,.licht{
+    height: 140px;
+    box-sizing: border-box;
+    border: 1px white solid;
+}
+
+.donker{
+    background-color: black;
+}
+.licht{
+    background-color: green;
+}

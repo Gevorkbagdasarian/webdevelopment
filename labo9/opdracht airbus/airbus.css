@@ -1,10 +1,11 @@
-body{
+body {
     width: 95%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
 
 }
-header{
+
+header {
     background: url("images/bgsky3.jpg") no-repeat;
     width: 100%;
     background-size: 100%;
@@ -15,24 +16,27 @@ header{
 
 }
 
-header p:first-child{
-    font-size:300%;
+header p:first-child {
+    font-size: 300%;
     font-weight: bold;
     font-style: italic;
     margin-top: 10px;
 }
-header p:nth-child(2){
-    font-size:240%;
+
+header p:nth-child(2) {
+    font-size: 240%;
     font-weight: bold;
 }
-#vliegtuig{
+
+#vliegtuig {
     position: absolute;
     right: 90px;
     bottom: 60px;
-    padding-right:29%;
+    padding-right: 29%;
 
 }
-aside{
+
+aside {
     width: 25%;
     background-color: #dddddd;
     float: right;
@@ -41,54 +45,58 @@ aside{
     color: #666666;
     font-size: 90%;
     border-style: solid;
-    margin-bottom:30px ;
+    margin-bottom: 30px;
 }
-aside>p{
+
+aside > p {
     padding: 10px;
 }
 
-aside>h3{
+aside > h3 {
     color: white;
     background: blue;
     font-size: 120%;
     text-align: center;
 }
-body>main{
+
+body > main {
     width: 75%;
     margin-right: 30px;
 }
 
-main>article{
+main > article {
     color: black;
     text-align: justify;
-    padding-top:20px;
-    padding-bottom:20px ;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-right: 30px;
     margin-left: 30px;
 
 
 }
-main{
+
+main {
     width: 75%;
     padding-right: 10px;
 
 }
-figure{
+
+figure {
     background-color: #999999;
     float: left;
 }
 
 
-span{
+span {
     color: blue;
     font-weight: bold;
     font-style: italic;
 }
-.venster{
+
+.venster {
     background-color: #999999;
 
 }
-
 
 
 .foto {
@@ -100,26 +108,29 @@ span{
     display: inline-block;
     margin: 10px;
     padding: 10px;
-
 }
 
-nav{
+nav {
     background-color: #666666;
     color: white;
     line-height: 2em;
 }
-nav>div{
+
+nav > div {
     display: inline-block;
     padding-left: 120px;
 
 }
-a{
+
+a {
     color: white;
 }
-li>a:hover{
+
+li > a:hover {
     color: #EF233C;
 }
-footer{
+
+footer {
     text-align: center;
     color: black;
     background-color: white;
