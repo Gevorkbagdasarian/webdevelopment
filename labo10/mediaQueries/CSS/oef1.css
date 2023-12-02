@@ -39,6 +39,8 @@ figcaption {
 	}
 	figure{
 		max-width: 100%;
+
+
 	}
 }
 
@@ -47,7 +49,10 @@ figcaption {
 		background-color: rebeccapurple;
 	}
 	figure{
-		max-width: 100%;
+		max-width: 40%;
+		display: inline-block;
+
+
 	}
 }
 @media screen and (min-width:992px ) {
@@ -55,7 +60,11 @@ figcaption {
 		background-color:darkseagreen;
 	}
 	figure{
-		max-width: 100%;
+		max-width:30%;
+		display: inline-block;
+
+
+
 	}
 }
 
