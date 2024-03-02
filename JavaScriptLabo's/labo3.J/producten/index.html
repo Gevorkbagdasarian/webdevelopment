@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="style.css " rel="stylesheet">
 </head>
 <body>
-
+<table>
+    <tr>
+        <th>producten</th>
+        <th>prijs</th>
+        <th>aantal</th>
+        <th>btw</th>
+        <th>subtotaal</th>
+    </tr>
+    <tr>
+        <td>product1</td>
+        <td class="prijs">10.00 Euro</td>
+        <td><input class="inputAantal" type="number" value="0" /></td>
+        <td class="btw">6%</td>
+        <td class="totaaluitkomst">0,00 Euro</td>
+    </tr>
+    <tr>
+        <td>product2</td>
+        <td class="prijs">15.00 Euro</td>
+        <td><input class="Aantal" type="number" value="0" /></td>
+        <td class="btw">21%</td>
+        <td class="totaaluitkomst">0,00 Euro</td>
+    </tr>
+    <tr>
+        <td>product3</td>
+        <td class="prijs">12.20 Euro</td>
+        <td><input class="inputAantal" type="number" value="0" /></td>
+        <td class="btw">21%</td>
+        <td class="totaaluitkomst">0,00 Euro</td>
+    </tr>
+    <tr>
+        <td colspan="4">Totaal</td>
+        <td id="totaal">0,00 Euro</td>
+    </tr>
+</table>
 </body>
 <script type="text/javascript" charset="utf-8" src="java.js" ></script>
-
+<input id="btnCalc" type="button" value="herbereken ">
 </html>
