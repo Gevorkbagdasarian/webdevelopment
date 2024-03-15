@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulier</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="myForm">
+    <div class="form-group">
+        <label for="firstName">Voornaam:</label><br>
+        <input type="text" id="firstName" name="firstName" maxlength="30">
+        <div class="error-message" id="firstNameError"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="lastName">Familienaam:</label><br>
+        <input type="text" id="lastName" name="lastName" required maxlength="50">
+        <div class="error-message" id="lastNameError"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="birthdate">Geboortedatum:</label><br>
+        <input type="text" id="birthdate" name="birthdate" placeholder="jjjj-mm-dd" pattern="\d{4}-\d{2}-\d{2}" required>
+        <div class="error-message" id="birthdateError"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+        <div class="error-message" id="emailError"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="children">Aantal kinderen:</label><br>
+        <input type="text" id="children" name="children" pattern="\d+" min="0" max="98" required>
+        <div class="error-message" id="childrenError"></div>
+    </div>
+
+    <input type="button" value="Valideer" onclick="validateForm()">
+</form>
+
+<script type="text/javascript" src="java.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formwaarden</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<form id="myForm">
+    <div class="form-label">
+        <label for="isSmoker">Is roker:</label>
+        <input type="checkbox" id="isSmoker" name="isSmoker">
+    </div>
+    <br><br>
+
+    <div class="form-label">
+        <label>Moedertaal:</label><br>
+        <section>
+        <input type="radio" name="language" value="nl">
+        <label>Nederlands</label><br>
+        <input type="radio" name="language" value="fr">
+        <label>Frans</label><br>
+        <input type="radio" name="language" value="en">
+        <label>Engels</label><br><br>
+        </section>
+    </div>
+
+    <div class="form-label">
+        <label for="favoriteCountry">Favoriete buurland:</label>
+        <select id="favoriteCountry" name="favoriteCountry">
+            <option value="Nederland">Nederland</option>
+            <option value="Frankrijk">Frankrijk</option>
+            <option value="Duitsland">Duitsland</option>
+        </select><br><br>
+    </div>
+
+    <div class="form-label">
+        <label for="order">Bestelling:</label>
+        <select id="order" name="order" multiple>
+            <option value="aardappelen">Aardappelen</option>
+            <option value="brood">Brood</option>
+            <option value="melk">Melk</option>
+            <option value="biefstuk">Biefstuk</option>
+            <option value="chips">Chips</option>
+            <option value="krant">Krant</option>
+        </select><br><br>
+    </div>
+
+    <input type="button" value="Toon resultaat" onclick="showResult()">
+</form>
+
+<div id="selectedOptions"></div>
+
+<script type="text/javascript" src="java.js"></script>
+</body>
+</html>
