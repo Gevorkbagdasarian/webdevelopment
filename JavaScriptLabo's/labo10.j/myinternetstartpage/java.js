@@ -1,11 +1,13 @@
 let global = {
     boxes: [], // aantal boxes
 };
+
 const setup = () => {
     let btnGO = document.getElementById("btnGO");
     btnGO.addEventListener("click", search);
     initializeStart(localStorage.getItem("Boxes"));
 }
+
 const search = () => {
     let searchField = document.getElementById("txtInput")
     if(searchField.value.charAt(0) !==  "/"){
@@ -24,7 +26,23 @@ const search = () => {
             let copySearch = searchField.value.substring(3);
             let text = copySearch;
             copySearch = copySearch.split(" ").join("%20");
-            let link = `https://${keyword}.com/hashtag/${copySearch}`;
+            let link = "";
+            switch(command) {
+                case "g":
+                    link = `https://www.google.com/search?q=${copySearch}`;
+                    break;
+                case "y":
+                    link = `https://www.youtube.com/results?search_query=${copySearch}`;
+                    break;
+                case "t":
+                    link = `https://twitter.com/hashtag/${copySearch}`;
+                    break;
+                case "i":
+                    link = `https://www.instagram.com/explore/tags/${copySearch}`;
+                    break;
+                default:
+                    break;
+            }
             addbox(link, text, color, btnColor, keyword);
             window.open(link);
             saveToStorage();
@@ -66,7 +84,6 @@ const addbox = (link, text, color, btnColor, keyword) => {
     cardsBox.appendChild(container);
 }
 
-
 const saveToStorage = () => {
     global.boxes = [];
     let divchilds = document.getElementsByClassName('kaart');
@@ -77,7 +94,6 @@ const saveToStorage = () => {
         info.push(tekst);
         info.push(link);
         global.boxes.push(info);
-
     }
     let string = JSON.stringify(global.boxes);
     localStorage.setItem("Boxes", string);
@@ -91,4 +107,5 @@ const initializeStart = (start) =>{
         }
     }
 }
+
 window.addEventListener("load", setup);
